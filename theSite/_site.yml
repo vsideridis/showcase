@@ -8,6 +8,15 @@ navbar:
     - text: "Preliminary Study"
       icon: "3D Plots"
       href: plots_3d.html
+    - text: "Rmarkdown"
+      icon: fa-archive
+      menu:
+        - text: "3D Plots"
+          href: plots_3d.html
+        - text: "Interactive Timeseries"
+          href: interactiveTimeseries.html
+    - text: "Tableau Map"
+      href: https://public.tableau.com/profile/vasileios.sideridis#!/vizhome/PatentsMap/Sheet1
 
 
 

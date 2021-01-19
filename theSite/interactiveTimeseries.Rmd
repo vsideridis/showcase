@@ -1,0 +1,8 @@
+---
+title: "Interactive Timeseries"
+---
+
+```{r , echo=FALSE, message=FALSE, warning=FALSE}
+fig <- readRDS("Results/plotly_interactive_timeseries.rds")
+fig
+```

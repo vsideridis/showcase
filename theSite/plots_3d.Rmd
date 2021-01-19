@@ -2,8 +2,99 @@
 title: "3D Plots"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+# Neurons in 3D space {.tabset .tabset-fade .tabset-pills}
+
+## Without Layer Planes {-}
+
+```{r Mouse1}
+library("RColorBrewer")
+fieldColors = brewer.pal(n = 8, name = 'Paired')
+
+plot3d(x = c(1:5), y = c(1:5), z = c(1:5))
+rgl.close()
+
+coordinates = read.csv("Results/coords.csv")
+thisColor = read.csv("Results/plot3dColors.csv")
+thisColor = thisColor[,2]
+
+par3d(windowRect = c(0, 0, 1000, 1000))
+
+plot3d(coordinates[, c(2:4)],
+       xlab = "X coordinates (um)",
+       ylab ="Y coordinates (um)",
+       zlab ="Z coordinates (um)",
+       main = "Coordinates in 3D",
+       size=6,
+       col = thisColor,
+       xlim = range(coordinates$x),
+       ylim = range(coordinates$y),
+       zlim = c(0,1000),
+       aspect = TRUE)
+
+legend3d("topright",
+         legend = paste0("Field ", c(1:8)),
+         text.col = fieldColors,
+         cex=4,
+         bty="n",
+         inset=c(0.02))
+
+rglwidget(elementId = "plot3D_coordinates")
 ```
+
+
+## With Layer Planes {-}
+
+```{r Mouse1LayerPlanes}
+plot3d(x = c(1:5), y = c(1:5), z = c(1:5))
+rgl.close()
+
+
+par3d(windowRect = c(0, 0, 1000, 1000))
+
+plot3d(coordinates[, c(2:4)],
+       xlab = "X coordinates (um)",
+       ylab ="Y coordinates (um)",
+       zlab ="Z coordinates (um)",
+       main = "Coordinates in 3D",
+       size=6,
+       col = thisColor,
+       xlim = range(coordinates$x),
+       ylim = range(coordinates$y),
+       zlim = c(0,1000),
+       aspect = TRUE)
+
+legend3d("topright",
+         legend = paste0("Field ", c(1:8)),
+         text.col = fieldColors,
+         cex=4,
+         bty="n",
+         inset=c(0.02))
+
+planes3d(0, 0, 1, -c(100, 300, 500, 600, 800), alpha = 0.4)
+rglwidget(elementId = "plot3D_coordinates_Planes")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
 
