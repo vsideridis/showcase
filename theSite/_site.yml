@@ -5,18 +5,23 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "Preliminary Study"
-      icon: "3D Plots"
-      href: plots_3d.html
     - text: "Rmarkdown"
-      icon: fa-archive
+      icon: fa-area-chart
       menu:
         - text: "3D Plots"
           href: plots_3d.html
         - text: "Interactive Timeseries"
           href: interactiveTimeseries.html
+        - text: "2D Plots Selection"
+          href: selection2dPlots.html
     - text: "Tableau Map"
+      icon: fa-globe
       href: https://public.tableau.com/profile/vasileios.sideridis#!/vizhome/PatentsMap/Sheet1
+    - text: "Presentation With Manim"
+      href: presentationWithManim.html
+    - text: "Movie Using Tiles"
+      icon: fa-film
+      href: movie.html
 
 
 
