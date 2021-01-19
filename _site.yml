@@ -1,0 +1,87 @@
+name: "Report Sideridis"
+navbar:
+  title: "Report Sideridis"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Preliminary Study"
+      icon: fa-archive
+      menu:
+        - text: "STTC Study"
+          href: STTCStudy.html
+        - text: "Firing Rate"
+          href: firingRate.html
+        - text: "Clustering Coefficient"
+          href: clusteringCoefficient.html
+        - text: "Normalized Degree of Connectivity"
+          href: normDegreeOfConnectivity.html
+        - text: "Percentage Of Statistically Significant Edges"
+          href: percStatSignVsZscore.html
+        - text: "Population, Pupil Radius and Treadmill Velocity"
+          href: populationTreadmillPupil.html
+        - text: "Density of Neurons"
+          href: DensityOfNeurons.html
+        - text: "Retinotopy"
+          href: retinotopy.html
+        - text: "Firing Event Movies"
+          href: firingEventMovies.html
+        - text: "Fluorescence Movies"
+          href: fluorescenceMovies.html
+        - text: "Coordinates 3D"
+          href: coordinates_3d.html
+        - text: "Firing Events vs Deconvolved (Examples)"
+          href: firingEventsVsDeconvolved.html
+    - text: "Key Findings"
+      icon: fa-lightbulb
+      menu:
+        - text: "Core Networks Exhibit Structure"
+          href: coreNetworks.html
+        - text: "Spatial Locality is Present within STTC Groups"
+          href: spatialLocality.html
+        - text: "Intra Layer Hub Neurons are also Inter Layer Ones"
+          href: IntraHubNeuronsIntrerConnectors.html
+        - text: "Diversity in the Orientation Preference in STTC Members"
+          href: orientationPreferenceDiversity.html
+        - text: "Locality Hashing"
+          href: overlapVsDistance.html
+        - text: "Hyperactive Frames"
+          href: hyperactiveframes.html
+        - text: "Short & Long Communicators"
+          href: ShortLongCommunicators.html
+        - text: "Predictive Power"
+          href: predictivePower.html
+    - text: "Functions"
+      icon: fa-code
+      href: functionDocumentation.html
+    - text: "Extras"
+      icon: fa-bars
+      menu:
+        - text: "Thresholding"
+          href: thresholding.html
+        - text: "Datasets"
+          icon: fa-database
+          href: datasets.html
+        - text: "Field Overlap"
+          href: fieldOverlap.html
+        - text: "df/f"
+          href: https://docs.google.com/presentation/d/1yD7AQgKWbprZbFPH7ClQhcdOjTwA91PB90wf6m3QiZ0/edit?usp=sharing
+
+
+output:
+  html_document:
+    theme: yeti
+    number_sections: yes
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: no
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    code_folding: hide
+    include:
+    css: styles.css
+    js: javascriptFunctions.js
+    includes:
+      in_header: header.html

@@ -1,0 +1,30 @@
+name: "Sideridis Showcase"
+navbar:
+  title: "Sideridis Showcase"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Preliminary Study"
+      icon: "3D Plots"
+      href: plots_3d.html
+
+
+
+output:
+  html_document:
+    theme: yeti
+    number_sections: yes
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: no
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    code_folding: hide
+    include:
+    css: styles.css
+    js: javascriptFunctions.js
+    includes:
+      in_header: header.html
