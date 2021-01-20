@@ -1,8 +1,5 @@
 ---
 title: "Movie"
-author: "Sideridis"
-date: "1/19/2021"
-output: html_document
 ---
 
 # Mouse Fluorescence Movie

@@ -4,18 +4,18 @@ title: "Selection of 2D Plots"
 
 # 2D scatterplot {.tabset .tabset-fade .tabset-pills}
 
-```{r displayingRetinotopyPlots, echo = FALSE, results = "asis"}
-for (thisLayer in c("Layer2_3", "Layer4", "Layer5")) {
-    
-cat("\n\n")
-cat(glue("## {thisLayer} {{-}}"))
-cat("\n\n")
-cat(glue("![](Results/retinotopy_{thisLayer}.png)"))
-cat("\n\n")
+## Layer 2/3 {-}
 
-}
-```
+![](Results/retinotopy_Layer2_3.png)
 
+## Layer 4 {-}
+
+![](Results/retinotopy_Layer4.png)
+
+
+## Layer 5 {-}
+
+![](Results/retinotopy_Layer5.png)
 
 
 
@@ -30,3 +30,17 @@ cat("\n\n")
 ## Without dots {-}
 
 ![](Results/densityNoNeurons.png)
+
+
+
+
+
+
+
+
+# Violin Plot
+
+![](Results/violinPlot.png)
+
+
+

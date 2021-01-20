@@ -8,6 +8,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This is a showcase of selected work.
 
-You can find my CV [here](https://sideridis.netlify.app/Results/CV_Sideridis.pdf).
+You can find my CV [here](https://sideridis-showcase.netlify.app/Results/CV_Sideridis.pdf).
 
 
