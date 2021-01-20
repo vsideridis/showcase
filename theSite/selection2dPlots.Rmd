@@ -15,7 +15,7 @@ title: "Selection of 2D Plots"
 
 ## Layer 5 {-}
 
-![](Results/retinotopy_Layer5.png)
+![](Results/retinotopy__Layer5.png)
 
 
 
